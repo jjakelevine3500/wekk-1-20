@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+:root {
+    --dark-green-color: #96ceb4;
+    --light-yellow-color: #ffeead;
+    --red-color: #ff6f69;
+    --dark-yellow-color: #ffcc5c;
+    --light-green-color: #88d8b0;
+    --shadow: 0 0 20px rgba(0, 0, 0, 0.5)
+}
+  
+body {
+    color: var(--light-green-color);
+    font-family: Verdana, Helvetica, sans-serif;
+    background-color: var(--light-yellow-color);
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.section-title {
+    min-width: 200px;
+    border-right: 5px solid var(--light-green-color);
+}
+
+/* HEADER */
+header {
+    padding: 20px;
+    background-color: var(--red-color);
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 48px;
+    color: var(--light-yellow-color);
+    margin: 0;
+    text-shadow: var(--shadow);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--light-yellow-color);
+}
+
+header nav ul {
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    list-style: none;
+}
+  
+header nav ul li a {
+    padding: 20px;
+    font-size: 28px;
+    text-shadow: var(--shadow);
+}
+
+header nav ul li a:hover {
+    font-weight: bold;
+    color: var(--dark-yellow-color);
+}
+
+/* HERO */
+.hero {
+    background-image: url('../images/lemon-tea.jpg');
+    height: 400px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero-profile img{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    border: 10px solid var(--light-yellow-color);
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 9999;
+}
+
+/* ABOUT ME */
+.about-me {
+    margin: 1.5%;
+}
+
+.about-me p {
+    width: 95%;
+    padding: 0 0 20px 20px;
+    font-size: 18px;
+    line-height: 1.2;
+    color: var(--dark-green-color);
+}
+
+/* MY WORK */
+.my-work {
+    margin: 1.5%;
+}
+
+.my-work figure {
+    margin: 0 0 0 20px;
+    justify-content: space-around;
+}
+
+.my-work img {
+    width: 98%;
+    border: 5px solid var(--light-green-color);
+    border-radius: 10px;
+}
+
+.my-work figcaption {
+    width: 20%;
+    position: relative;
+    bottom: 40%;
+    left: 0;
+    padding: 10px;
+    color: var(--light-yellow-color);
+    background-color: var(--light-green-color);
+    border-radius: 10px;
+}
+
+.my-work a {
+    text-decoration: none;
+    max-width: 49%;
+    flex-wrap: wrap;
+}   
+
+.my-work-lesser {
+    flex-wrap: wrap;
+    column-gap: 20px;
+    min-width: 300px;
+}
+
+.my-work-lesser figcaption {
+    width: 40%;
+    flex-wrap: wrap;
+}
+
+/* FOOTER */
+footer {
+    justify-content: flex-start;
+    margin: 1.5%;
+}
+
+footer div ul {
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+}
+  
+footer div ul li {
+    margin: 20px;
+    padding: 0 0 5px 0;
+    justify-content: space-between;
+    border-bottom: 5px solid var(--light-green-color);
+}
+
+footer div ul li a {
+    text-decoration: none;
+    color: var(--light-green-color);
+}
+
+footer div ul li:hover {
+    font-weight: bold;
+    color: var(--dark-green-color);
+}
+
+/*MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    .flex-row {
+        justify-content: center;
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    .section-title {
+        border-bottom: 5px solid var(--light-green-color);
+        border-right: none;
+    }
+
+    .my-work figure {
+        margin: 20px 0 0 0;
+    }
+
+    .my-work figcaption {
+        width: 50%;
+    }
+
+    .my-work-lesser figcaption {
+        width: 80%;
+    }
+    
+    header h1, footer h2 {
+        width: 100%;
+        text-align: center;
+    }
+  
+    header nav ul, footer div ul {
+        width: 100%;
+        justify-content: center;
+    }
+
+    header a, footer a {
+        font-size: 20px;
+    }
+  
+    .section-title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-me div {
+        margin: 20px 0 0 0;
+        width: 100%;
+    }
+  }
