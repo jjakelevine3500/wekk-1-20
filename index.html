@@ -1,128 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Joe Lawton's Portfolio</title>
-        <link rel="stylesheet" href="./assets/css/style.css" />
-    </head>
 
-    <body>
-        <!-- header and nav section start -->
-        <header>
-            <div><h1>Joe Lawton</h1></div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about-me">About Me</a>
-                    </li>
-                    <li>
-                        <a href="#my-work">My Work</a>
-                    </li>
-                    <li>
-                        <a href="#contact-me">Contact Me</a>
-                    </li>
-                    <li>
-                        <a href="./assets/documents/joelawtonresume.pdf" target="_blank">My Resume</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+<head>
+  <meta charset="UTF-8" />
+  <title>Claire Sky</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
 
-        <!-- hero image section start -->
-        <section class="hero">
-            <div>
-                <img src="./assets/images/profilepic.jpg" alt="An image of Joe Lawton">
-            </div>
-            <div class="quote">
-                <blockquote>
-                    <p id="quote-text">
-                        You miss 100% of the <br> shots you don't take.
-                    </p>
-                    <p>
-                        --Wayne Gretzsky<br>
-                        --Michael Scott
-                    </p>
-                </blockquote>
-            </div>
-        </section>
+<body>
+    <!-- HEADER -->
+    <header class="flex-row">
+        <h1>Claire Sky</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about-me">About Me</a>
+                </li>
+                <li>
+                    <a href="#my-work">My Work</a>
+                </li>
+                <li>
+                    <a href="#contact-me">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-profile">
+            <img src="assets/images/claire.jpg" alt="Profile photo of Claire">
+        </div>
+    </section>
 
-        <!-- about me section start -->
-        <section id="about-me" class="about-me">
-            <div class="title">
-                <h2>About Me</h2>
-            </div>
-            
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eleifend enim at eros finibus luctus. Integer dapibus ex consequat risus pulvinar cursus. Vivamus sit amet mauris congue, tincidunt massa lacinia, varius purus. Curabitur tincidunt fringilla hendrerit. Morbi eleifend purus sed nunc laoreet sollicitudin. Aenean convallis hendrerit condimentum. Maecenas semper, sem quis iaculis gravida, leo turpis ullamcorper lectus, quis placerat quam neque in arcu. Ut interdum odio sed eros ornare ultricies. Sed imperdiet non mi ac eleifend. In pretium, risus quis feugiat commodo, lacus ex pulvinar libero, non rutrum nibh tortor et magna.
-                    <br><br>
-                    Donec blandit aliquet rutrum. Donec et pharetra nulla. Nullam ultrices nisi vitae luctus volutpat. Nunc vitae magna ultricies, vulputate erat vitae, lacinia ipsum. Ut eu nisl at magna vulputate sagittis. Etiam eros orci, dictum sed risus in, iaculis eleifend diam. Ut dapibus nulla sit amet mauris tristique viverra. Mauris varius sed ligula a accumsan. Praesent feugiat euismod velit, eu vestibulum libero scelerisque sed. Aliquam finibus turpis arcu, nec convallis dui semper id. Ut nisl lacus, molestie ac ornare sit amet, suscipit mollis sapien.
-                </p>
-            </div>
-        </section>
+    <!-- ABOUT ME -->
+    <section id="about-me" class="about-me flex-row">
+        <h2 class="section-title">About Me</h2>
+        <div>
+            <p>
+                Communication is a core function of my role, working with multiple departments, high level stakeholders, and with our key supplier. I’ve read multiple books on the subject and grown in this area over the years - that has affirmed that communication is a foundational skill that helps in all aspects of both business and personal life. It’s a never-ending education so I’m excited to be learning from experts like the leadership team here.
+            </p>
+            <p>
+                Gossiping is a poor example of communication that I'd like to stop perpetuating. I'm taking steps by stopping myself when I catch myself gossiping or partaking in gossip by apologizing and re-framing my words (or helping others re-frame their words) in a more positive way.
+            </p>  
+        </div>
+    </section>
 
-        <!-- my work section start -->
-        <section id="my-work" class="my-work">
-            <div class="title"><h2>My Work</h2></div>
-            <div class = "projects-grid-wrapper">
-                <div class="projects-grid">
+    <!-- WORK -->
+    <section id="my-work" class="my-work flex-row">
+        <h2 class="section-title">My Work</h2>
+        <div class="flex-column">
+            <figure>
+                <a href="https://claire-sky.github.io/day-trip-planner/" target="_blank">
+                    <img src="./assets/images/day-trip-planner.JPG" alt="Day Trip Planner website with weather and checklist">
+                    <figcaption>
+                        <h3>Day Trip Planner</h3>
+                        <p>javascript</p>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="flex-row my-work-lesser">
+                <a href="https://claire-sky.github.io/run-buddy-module2/" target="_blank">
+                    <img src="./assets/images/run-buddy.JPG" alt="Run Buddy website hero with navigation">
+                    <figcaption>
+                        <h3>Run Buddy</h3>
+                        <p>html/css</p>
+                    </figcaption>
+                </a>
+                <a href="https://claire-sky.github.io/challenge1/" target="_blank">
+                    <img src="./assets/images/challenge2.JPG" alt="Horiseon website hero with navigation">
+                    <figcaption>
+                        <h3>Horiseon</h3>
+                        <p>html/css</p>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="flex-row my-work-lesser">
+                <a href="https://claire-sky.github.io/robot-gladiators/" target="_blank">
+                    <img src="./assets/images/robot-gladiators.JPG" alt="Robot fighters on sidewalk">
+                    <figcaption>
+                        <h3>Robot Gladiators</h3>
+                        <p>javascript</p>
+                    </figcaption>
+                </a>
+                <a>
+                    <img src="./assets/images/future-work.jpg" alt="Moving walkway with glass reflecting">
+                    <figcaption>
+                        <h3>Future Projects</h3>
+                        <p>magic</p>
+                    </figcaption>
+                </a>
+            </figure>
+        </div>
+    </section>
 
-                    <a href="https://jdlawton.github.io/run-buddy/" target="_blank" class="project run-buddy">
-                        <div class="project-label">
-                            <h3>Run Buddy</h3>
-                            <p>HTML/CSS</p>
-                        </div>
-                    </a>
-                    <a href="https://jdlawton.github.io/robot-gladiators/" target="_blank" class="project robot-gladiators">
-                        <div class="project-label">
-                            <h3>Robot Gladiators</h3>
-                            <p>JavaScript</p>
-                        </div>
-                    </a>
-                    <a href="https://jdlawton.github.io/prestige-worldwide/" target="_blank" class="project prestige-worldwide">
-                        <div class="project-label">
-                            <h3>Prestige Worldwide</h3>
-                            <p>HTML/CSS/JavaScript</p>
-                        </div>
-                    </a>
-                    <a href="https://jdlawton.github.io/fo-char-gen" target="_blank" class="project fo4-char-mgr">
-                        <div class="project-label">
-                            <h3>Fallout 4 Character Manager</h3>
-                            <p>Node.js, Express, Sequelize, Handlebars</p>
-                        </div>
-                    </a>
-                    <a href="#" target="_blank"  class="project project5">
-                        <div class="project-label">
-                            <h3>Project 5</h3>
-                            <p>Placeholder</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
+    <!-- FOOTER/CONTACT ME -->
+    <footer id="contact-me" class="flex-row">
+        <h2 class="section-title">Contact Me</h2>
+        <div>
+            <ul>
+                <li>
+                    E: <a href="mailto:eclconnolly@gmail.com">eclconnolly@gmail.com</a>
+                </li>
+                <li>
+                    P: 916-303-0114
+                </li>
+                <li>
+                    <a href="https://github.com/claire-sky" target="_blank">Github</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/eclconnolly" target="_blank">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
 
-        <!-- contact info section -->
-        <footer id="contact-me">
-            <div class="title"><h2>Contact Me</h2></div>
-            <div class="content-wrapper">
-                <div id="contact-list">
-                    <ul>
-                        <li>
-                            <a href="mailto:jlawton1203@gmail.com">Email</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/jdlawton" target="_blank">GitHub</a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/joseph-lawton-702577ba/" target="_blank">LinkedIn</a>
-                        </li>
-                        <li>
-                            <p>(555) 555-5555</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
-    </body>
 </html>
